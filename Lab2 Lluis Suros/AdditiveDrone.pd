@@ -1,0 +1,13 @@
+#N canvas 508 139 658 593 12;
+#X obj 262 28 harmonic 1;
+#X obj 256 148 harmonic 2;
+#X obj 255 271 harmonic 3;
+#X obj 255 396 harmonic 4;
+#X obj 434 25 harmonic 5;
+#X obj 434 148 harmonic 6;
+#X obj 433 271 harmonic 7;
+#X obj 433 396 harmonic 8;
+#X obj 3 27 mainControl;
+#X text 6 528 This is a drone generator \, I recommend to just push
+the randomizer and let it run! Master Amp can bring it to clip with
+interesting results;
