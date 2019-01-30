@@ -9,12 +9,12 @@
 #X obj 14 509 *~, f 4;
 #X obj 30 707 dac~;
 #X obj 226 228 hsl 128 15 0 4 0 0 master_amp_sldr empty Master_Amp
--2 -8 0 10 -257985 -1 -1 5215 1;
+-2 -8 0 10 -257985 -1 -1 5715 1;
 #X obj 13 145 mtof;
 #X msg 145 47 0;
 #X obj 191 29 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
 0;
-#X obj 323 126 bng 25 250 50 0 empty empty randomizer 27 7 0 10 -4032
+#X obj 344 125 bng 25 250 50 0 empty empty randomizer 27 7 0 10 -4032
 -1 -1;
 #X obj 433 187 send bang_rand;
 #X obj 336 262 audio-rec;
@@ -187,7 +187,7 @@
 #X msg 81 51 1.8;
 #X obj 302 22 r pitch_add;
 #X obj 302 53 spigot;
-#X obj 323 109 tgl 15 0 empty empty markov_linked 17 7 0 10 -4032 -1
+#X obj 344 108 tgl 15 0 empty empty markov_linked 17 7 0 10 -4032 -1
 -1 0 1;
 #X obj 13 205 line;
 #X floatatom 37 234 5 0 0 0 - - -;
@@ -246,4 +246,4 @@
 #X connect 41 0 21 0;
 #X connect 42 0 44 0;
 #X connect 44 0 43 0;
-#X coords 0 -1 1 1 220 400 1 200 100;
+#X coords 0 -1 1 1 240 400 1 200 100;

@@ -1,0 +1,23 @@
+#N canvas 177 80 1017 593 12;
+#X obj 661 29 harmonic 1;
+#X obj 661 152 harmonic 2;
+#X obj 661 275 harmonic 3;
+#X obj 661 398 harmonic 4;
+#X obj 833 29 harmonic 5;
+#X obj 833 152 harmonic 6;
+#X obj 833 275 harmonic 7;
+#X obj 833 398 harmonic 8;
+#X obj 252 333 s midiPitch;
+#X obj 4 5 r midiPitch;
+#X obj 252 30 markovian_pitch_selector;
+#X obj 153 4 r midiAmp;
+#X obj 583 334 s midiAmp;
+#X text 29 489 This is a drone generator \, I recommend to just push
+the randomizer and let it run! Master Amp can bring it to clip with
+interesting results. The markov-chained pitch generator can have a
+fast tempo \, but it is designed to change slowly.;
+#X obj 3 27 masterControl;
+#X connect 9 0 14 0;
+#X connect 10 0 8 0;
+#X connect 10 1 12 0;
+#X connect 11 0 14 1;
